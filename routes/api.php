@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/orders', [OrderController::class,'store']);
+Route::post('/orders/confirm', [OrderController::class, 'confirm']);
