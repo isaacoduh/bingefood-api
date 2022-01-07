@@ -19,6 +19,7 @@ class CreateOrderItemsTable extends Migration
             $table->string('product_title');
             $table->decimal('price');
             $table->unsignedBigInteger('quantity');
+            $table->decimal('subtotal');
             $table->timestamps();
 
             $table->foreign('order_id')->references('id')->on('orders');
